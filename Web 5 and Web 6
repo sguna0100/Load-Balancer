@@ -1,0 +1,6 @@
+#!/bin/bash
+sudo yum -y install httpd
+sudo mkdir /var/www/html/images
+sudo echo "This is image server" > /var/www/html/images/index.html
+sudo systemctl restart httpd
+sudo systemctl enable httpd
