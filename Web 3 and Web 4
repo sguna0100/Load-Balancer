@@ -1,0 +1,6 @@
+#!/bin/bash
+sudo yum -y install httpd
+sudo mkdir /var/www/html/videos
+sudo echo "This is Video server" > /var/www/html/videos/index.html
+sudo systemctl restart httpd
+sudo systemctl enable httpd
